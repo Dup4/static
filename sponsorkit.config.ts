@@ -35,6 +35,26 @@ export default defineConfig({
             sponsors.push(s);
         }
 
+        {
+            const s: Sponsorship = {
+                isOneTime: true,
+                provider: "github",
+                monthlyDollars: 15,
+                privacyLevel: "PUBLIC",
+                tierName: "$15 one time",
+                createdAt: "2024-02-02T08:00:00Z",
+                sponsor: {
+                    type: "User",
+                    login: "Tangent1231",
+                    name: "Tangent1231",
+                    avatarUrl:
+                        "https://avatars.githubusercontent.com/u/41216851?v=4",
+                },
+            };
+
+            sponsors.push(s);
+        }
+
         return sponsors;
     },
     tiers: [
