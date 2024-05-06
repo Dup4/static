@@ -1,15 +1,16 @@
 {
-    "packageManager": "pnpm@8.15.1",
-    "type": "module",
-    "scripts": {
-        "build": "sh build.sh"
-    },
-    "devDependencies": {
-        "@antfu/eslint-config": "^2.6.3",
-        "eslint": "^8.56.0",
-        "pnpm": "^8.15.1",
-        "sponsorkit": "^0.8.5",
-        "taze": "^0.13.2",
-        "typescript": "^5.3.3"
-    }
+  "type": "module",
+  "packageManager": "pnpm@8.15.1",
+  "scripts": {
+    "build": "bash build.sh",
+    "start": "bash start_http.sh"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.3",
+    "eslint": "^8.56.0",
+    "pnpm": "^8.15.1",
+    "sponsorkit": "^0.8.5",
+    "taze": "^0.13.2",
+    "typescript": "^5.3.3"
+  }
 }

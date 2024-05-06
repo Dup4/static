@@ -22,7 +22,11 @@ export default defineConfig({
     for (const sponsor of sponsors) {
       if (sponsor.sponsor.name === "wjy-yy") {
         sponsor.monthlyDollars = 10;
+        sponsor.isOneTime = true;
+        sponsor.tierName = "$10 one time";
+        sponsor.createdAt = "2023-11-13T08:00:00Z";
       }
+      console.log(sponsor);
     }
 
     {
@@ -38,7 +42,7 @@ export default defineConfig({
           login: "Hsueh-Xue",
           name: "Hsueh-Xue",
           avatarUrl:
-                        "https://avatars.githubusercontent.com/u/41107630?v=4",
+            "https://avatars.githubusercontent.com/u/41107630?v=4",
         },
       };
 
