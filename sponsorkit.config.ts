@@ -68,6 +68,25 @@ export default defineConfig({
       sponsors.push(s);
     }
 
+    {
+      const s: Sponsorship = {
+        isOneTime: true,
+        provider: "github",
+        monthlyDollars: 70,
+        privacyLevel: "PUBLIC",
+        tierName: "$70 one time",
+        createdAt: "2024-06-03T13:30:00Z",
+        sponsor: {
+          type: "User",
+          login: "cy1999",
+          name: "cy1999",
+          avatarUrl: "http://localhost:8000/images/cy1999.jpg",
+        },
+      };
+
+      sponsors.push(s);
+    }
+
     return sponsors;
   },
   tiers: [
