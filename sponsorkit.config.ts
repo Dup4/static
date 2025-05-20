@@ -26,6 +26,18 @@ export default defineConfig({
         sponsor.tierName = "$10 one time";
         sponsor.createdAt = "2023-11-13T08:00:00Z";
       }
+      if (sponsor.sponsor.name === "dreamerblue") {
+        sponsor.monthlyDollars = 25;
+        sponsor.isOneTime = true;
+        sponsor.tierName = "$25 one time";
+        sponsor.createdAt = "2024-05-05T08:00:00Z";
+      }
+      if (sponsor.sponsor.name === "cubercsl") {
+        sponsor.monthlyDollars = 5;
+        sponsor.isOneTime = true;
+        sponsor.tierName = "$5 one time";
+        sponsor.createdAt = "2025-03-19T08:00:00Z";
+      }
       console.log(sponsor);
     }
 
@@ -72,10 +84,10 @@ export default defineConfig({
       const s: Sponsorship = {
         isOneTime: true,
         provider: "github",
-        monthlyDollars: 70,
+        monthlyDollars: 140,
         privacyLevel: "PUBLIC",
-        tierName: "$70 one time",
-        createdAt: "2024-06-03T13:30:00Z",
+        tierName: "$140 one time",
+        createdAt: "2025-05-13T13:30:00Z",
         sponsor: {
           type: "User",
           login: "cy1999",
